@@ -1,0 +1,173 @@
+:root {
+    --main-bg-color: #2874f0;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        background-color: white;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: 12px 0;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .search {
+        justify-content: center;
+    }
+
+    .search input {
+        margin: 12px 16px;
+    }
+
+    nav ul {
+        height: 34px;
+    }
+    .slider{
+        height: 23vh;
+    }
+
+    .card-item img{
+        width: 140px;
+    }
+    .flex-all-center{
+        background-color: black;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: var(--main-bg-color);
+    
+}
+
+nav {
+    display: flex;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+margin-left: 50px;
+}
+
+.logo img {
+    width: 83px;
+    padding: 0 25;
+}
+
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a:hover {
+    color: blue;
+    font-weight: bold;
+}
+nav ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin: 0 16px 0 50px;
+    padding: 0 12px;
+}
+
+.search .btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.main {
+    min-height: calc(100vh - 58px - 30vh);
+}
+
+.slider {
+    width: 80vw;
+    overflow: hidden;
+    margin: 12px auto;
+}
+
+.slider img {
+    width: 100vw;
+}
+
+.card {
+
+    max-width: 91vw;
+    margin: 37px auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    overflow: scroll;
+    
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.about{
+    margin-left:15vw ;
+    padding-top: 3vh;
+   
+}
+
+.my1 ul li {
+list-style-type: none;
+}
+
+footer {
+    height: 30vh;
+    background-color:var(--main-bg-color) ;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
